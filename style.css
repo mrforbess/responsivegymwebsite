@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap'); 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav{
+    position:fixed; /* so that navbar is fixed even when we scroll*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background-color: #222;
+    z-index: 10000; /*  THis will make navbar stay on top always. Elements with a higher index will be placed on top of elements with a lower index. Note: 
+    Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed*/
+
+}
+
+.nav h2{
+    color:#fff;
+    font-size: 1.7rem; /* font size is recomended to be in rem*/  
+}
+
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li{
+    list-style: none; /* remmoves bullet from list*/ 
+    padding-right: 50px;
+}
+
+#item li a{
+    text-decoration: none; /* remmoves underline from list*/ 
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#item li a:hover, #item .icon i:hover{  /* hover effect*/
+    color:#ff5733;
+    cursor:pointer;
+}
+
+#item .icon i{
+    color: #fff;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+.back{
+    background-image: url(img/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size:cover;
+    z-index: -1;
+}
+
+.back .overlay{
+    background: #171819;
+    width:100%;
+    height:100%;
+    opacity:0.85%;
+}
+
+.mid{
+    position:absolute; /* brings text to the middle*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.mid p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.mid h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.mid .btn{
+margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple{
+    color:#fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+
+
+.mid .btn a.simple:hover{
+    color: #ff5733;
+}
+.mid .btn a.border{
+    color:#ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+
+.mid .btn a.border:hover{
+    background: #fff;
+    border:1px solid #fff;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background-color: #171819;
+}
+
+.details h3,h6,h5{
+    color: #fff;
+}
+
+.details .one{
+    width: 45%;
+    display: flex;   /* helps us create a full width button*/
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.details .one h3{
+    font-size: 2.5rem;
+    padding-bottom: 1.1rem;
+}
+
+.details .one h6{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 1.2rem;
+}
+
+.details .one p{
+    color: #666262;
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+}
+.details .one a{
+    color: #fff;
+    background: #f13a11;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.details .two{
+    width: 45%;
+    border-left: 1px solid #666262;
+    padding-left: 4rem;
+}
+
+.details .two h3{
+    font-size: 2.5rem;
+
+}
+
+.details .two h5{
+    font-size: 1.1rem;
+}
+
+.details .two p{
+    color: #666262;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
