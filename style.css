@@ -164,6 +164,12 @@ margin-top: 2rem;
     text-transform: uppercase;
     text-align: center;
 }
+/* Hover efect*/
+.details .one a:hover{
+    background: #fff;
+    color: #f13a11;
+}
+
 .details .two{
     width: 45%;
     border-left: 1px solid #666262;
@@ -183,4 +189,299 @@ margin-top: 2rem;
     color: #666262;
     font-size: 1.1rem;
     margin-bottom: 0.8rem;
+}
+
+/* THIRD SECTION*/
+
+.trainer{
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trainer .about{
+    width: 39%;
+}
+
+.trainer .about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.8rem;
+}
+
+.trainer .about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+.trainer .people{
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .people .team1{
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+    100px 100px 80px rgba(0, 0, 0, 0.09);
+
+}
+
+.trainer .people .team1 .img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainer .people .team1 .name, .trainer .people .team1 .profession{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer .people .team1 .name{
+    padding: 5px 20px 0 20px;
+}
+
+.trainer .people .team1 .teamDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.trainer .people .team1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+}
+
+
+.trainer .people .team1 .name i, .trainer .people .team1 .profession i{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #212529;
+}
+
+.trainer .people .team1 .profession{
+    padding: 0 20px 5px 20px;
+}
+.trainer .people .team1 .profession p{
+    color: #212529;
+}
+
+/* third section */
+
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+
+.class .paragraph{
+    font-size: 1.3rem;
+    color: #95a5a6;
+    padding-bottom: 6px;
+    text-align: center;
+}
+
+.class .h2{
+    font-size: 2.2rem;
+    color:#222;
+    font-size: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.class .classMenu .team1{
+        width: 32%;
+        height: auto;
+        box-sizing: border-box;
+        background: #fff;
+        box-shadow:4.5px 4.5px 3.6px rgba(0, 0, 0, 0.031),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.045),
+        30.1px 30.1px 24.1px rgba(0, 0, 0, 0.059),
+        100px 100px 80px rgba(0, 0, 0, 0.09);
+    
+    }
+    .class .classMenu .team1 .img img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .class .classMenu .team1 .teamDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .class .classMenu .team1 .teamDetails .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px 0 30px;
+    }
+.class .classMenu .team1 .teamDetails .name .nameDetails h4{
+    color: #212529;
+    font-size: 1.7rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p{
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+.class .classMenu .team1 .teamDetails .name .nameDetails p span{
+    font-weight: 700;
+    font-size: 1.1rem;
+ }
+
+ .class .classMenu .team1 .teamDetails .name .num h5{
+
+    font-size: 1rem;
+    background: #f13a11;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height:3.5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.class .classMenu .team1 .profession{
+    padding: 15px 30px 30px 30px;
+}
+
+.class .classMenu .team1 .profession p{
+
+    font-size: 1.1rem;
+    color: #666262;
+}
+.classMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact FOrm*/
+.contact{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact .form{
+    width: 45%;
+}
+
+.contact .form h2{
+    font-size: 2rem;
+    color:#212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .form .submit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .form .submit input, .contact .form .submit textarea{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #95a5a6;
+    outline: none;
+    margin: 13px 0; /* creates space within fills*/
+}
+
+.contact .form .submit input:focus, .contact .form .submit textarea:focus{  /* changes border color on clicking box*/
+    border:1px solid #111;
+}
+
+.contact .form .submit input::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.contact .form .submit textarea::placeholder{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    height: 80%;
+}
+
+.contact .form .submit a{
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 13px 0;
+}
+
+/* to arrange map and contact form*/
+
+
+.contact .map{
+    width: 45%;
+}
+
+.contact .map h2{
+    font-size: 2rem;
+    color:#212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contact .map p{
+    font-size: 1.1rem;
+    color:#212529;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.contact .map p i{
+    color: #f13a11;
+    padding-right: 4px;
+}
+
+
+.contact .map iframe{
+    width: 100%;
+}
+
+.footer{
+    border-top: 1px solid #ecf0f1;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    color: #7f8c8d;
+    justify-content: flex-start;
+}
+
+.footer p i{
+    color: #f13a11;
+    padding-right: 5px;
 }
