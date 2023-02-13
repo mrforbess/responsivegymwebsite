@@ -54,6 +54,16 @@
     padding-right: 30px;
     font-weight: bolder;
 }
+
+/* adding and styling hamburger iccon, adding during responsiveness adjustment*/
+#bar{
+    color: #ff5733;
+    font-weight: lighter;
+    font-size: 1.5rem;
+    display:none /* this hides the display for you to bring up durign responsiveness adjustment*/
+
+}
+/*----- END OF NAV SECTION-----*/
 .back{
     background-image: url(img/bg.jpg);
     width: 100%;
@@ -119,7 +129,7 @@ margin-top: 2rem;
     background: #fff;
     border:1px solid #fff;
 }
-
+/*---- SECOND SECTION ----- */
 .details{
     width: 100%;
     display: flex;
@@ -279,7 +289,7 @@ margin-top: 2rem;
     color: #212529;
 }
 
-/* third section */
+/* fourth section */
 
 .class{
     display: flex;
@@ -299,7 +309,7 @@ margin-top: 2rem;
 .class .h2{
     font-size: 2.2rem;
     color:#222;
-    font-size: 700;
+    font-weight: 700;
     padding-bottom: 50px;
     text-align: center;
 }
@@ -467,6 +477,8 @@ margin-top: 2rem;
     width: 100%;
 }
 
+/*---- Sixth Section/ Footer-----*/
+
 .footer{
     border-top: 1px solid #ecf0f1;
     padding: 5rem 8rem;
@@ -484,4 +496,311 @@ margin-top: 2rem;
 .footer p i{
     color: #f13a11;
     padding-right: 5px;
+}
+
+/* --Media Query -*/
+
+@media screen and (max-width: 1042px){
+    .nav{
+        padding: 1rem 4.5rem;
+    }
+    .nav h2{
+        font-size: 1.4rem; 
+    }
+   
+    #item li{
+        padding-right: 30px;
+    }
+    
+    #item li a{
+        font-size: 0.9rem;
+    }
+    #item .icon i{
+        padding-right: 20px;
+    }        
+
+}
+
+@media screen and (max-width: 991px){
+    .nav{
+        padding: 1rem 3rem;
+    }
+    
+    .nav h2{
+        font-size: 1.6rem; 
+    }
+    
+    #item{
+        flex-direction: column; 
+        text-align: center;
+        width: 300px;
+        height:80vh;
+        position: fixed;
+        top: 0;
+        right: -300px; /* pushes it to the right and will disappear until you make hamburger clickable*/
+        background: rgba(0,0,0,0.8);
+        z-index:100000;
+        margin-top: 4.2rem;
+        transition: 0.5s;
+    }
+    
+    #item li{
+        padding-right: 0px;
+        padding: 4px 0px;
+    }
+    
+    #item li a{
+        font-size: 1.2  rem;
+    }
+
+    #item .icon {  /* freshly added*/
+        padding-right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #item .icon i{
+        padding:0 15px 0 15px; /* top, right, bottom, left*/
+    }
+    
+    /* adding and styling hamburger iccon, adding during responsiveness adjustment*/
+    #bar{
+        display:initial; /*  bring up durign responsiveness adjustment*/
+        cursor: pointer;
+}
+
+    .mid{
+        position:absolute; /* brings text to the middle*/
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .mid p{
+        color: #7f8c8d;
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .mid h2{
+    
+        font-size: 2.5rem;
+    }
+
+    .mid .btn{
+    margin-top: 1.5rem;
+    }
+
+    .mid .btn a{
+        font-size: 0.9rem;
+    }
+
+    .mid .btn a.simple{
+    
+        padding: 0.7rem 1.4rem;
+    }
+
+
+    .mid .btn a.border{
+        padding: 0.7rem 1.4rem;
+    
+    }
+
+    /* adjusting details section*/
+
+    .details{
+        padding: 6rem 7rem;
+    }
+
+    .details .one{
+        width: 50;
+    }
+    .details .one h3{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+
+
+    .details .one p{
+        font-size: 1.1rem;
+        padding-bottom: 2.2rem;
+    }
+    .details .one a{
+    font-size: 0.9rem;
+    }
+
+
+    .details .two{
+        padding-left: 3.5 rem;
+    }
+
+    .details .two h3{
+        font-size: 2rem;
+
+    }
+
+    .details .two h5{
+        font-size: 1rem;
+    }
+
+    .details .two p{
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+/**----Trainer/Third Section--*/
+
+
+    .trainer{
+        padding: 6rem 7rem;
+    }
+
+    .trainer .about h2{
+        font-size: 2rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .trainer .about p{
+        font-size: 1.1rem;
+    }
+
+    .trainer .people .team1{
+        width: 48%;
+    }
+
+    .trainer .people .team1 .name{
+        padding: 5px 15px 15px 20px;
+    }
+
+    .trainer .people .team1 .name h4{
+        font-size: 1.1rem;
+    }
+
+
+    .trainer .people .team1 .name i, .trainer .people .team1 .profession i{
+        font-size: 1.1rem;
+    }
+
+    .trainer .people .team1 .profession{
+        padding: 0 15px 15px 20px;
+    }
+
+/**----Claases/Fourth Section--*/
+
+
+    .class{
+        padding: 6rem;
+    }
+
+    .class .paragraph{
+        font-size: 1.1rem;
+        padding-bottom: 4px;
+    }
+
+    .class .h2{
+        font-size: 2rem;
+        padding-bottom: 30px;
+    }
+
+    .class .classMenu .team1 .teamDetails{
+        padding-bottom: 7px;
+    }
+
+    .class .classMenu .team1 .teamDetails .name{
+        padding: 5px 15px 0 15px;
+    }
+    .class .classMenu .team1 .teamDetails .name .nameDetails h4{
+        font-size: 1.2rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .nameDetails p{
+        font-size: 1rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .nameDetails p span{
+        font-size: 1rem;
+    }
+
+    .class .classMenu .team1 .teamDetails .name .num h5{
+
+        font-size:0.9rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        line-height:3.2rem;
+    }
+
+    .class .classMenu .team1 .profession{
+        padding: 15px 15px 30px 15px;
+    }
+
+    .class .classMenu .team1 .profession p{
+
+        font-size: 1rem;
+    }
+
+/**----Contact/Fifth Section--*/
+
+    .contact{
+        padding: 6rem;
+    }
+
+    .contact .form h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+
+
+    .contact .form .submit input, .contact .form .submit textarea{
+        padding: 12px;
+        margin: 10px 0; /* creates space within fills*/
+    }
+
+
+    .contact .form .submit input::placeholder{
+        font-size: 1rem;
+    }
+
+    .contact .form .submit textarea::placeholder{
+        font-size: 1rem;
+    }
+
+    .contact .form .submit a{
+        padding: 13px 0;
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    /* to arrange map and contact form*/
+
+
+  
+    .contact .map h2{
+        font-size: 2rem;
+        padding-bottom: 7px;
+    }
+
+    .contact .map p{
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+
+/**----Footer/Sixth Section--*/
+
+    .footer{
+        padding: 6rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+
+@media screen and (max-width: 496x){
+    
 }
