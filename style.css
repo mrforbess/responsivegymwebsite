@@ -498,7 +498,7 @@ margin-top: 2rem;
     padding-right: 5px;
 }
 
-/* --Media Query -*/
+/* --MEDIA QUERY -*/
 
 @media screen and (max-width: 1042px){
     .nav{
@@ -798,9 +798,245 @@ margin-top: 2rem;
 
 @media screen and (max-width: 768px){
     
+    /* Delete te ones you want to maintain */
+  
+    .nav h2{
+        font-size: 1.5rem; 
+    }
+    
+    .back{ /* freshly added*/
+        background-position: center;
+    }
+
+    .back .overlay{
+        opacity: 85%;
+    }
+    
+   
+    .mid{
+        position:absolute; /* brings text to the middle*/
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .mid p{
+        color: #7f8c8d;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mid h2{
+    
+        font-size: 2.1rem;
+    }
+
+    .mid .btn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .mid .btn a.simple{
+        margin-bottom: 7px;
+        padding: 0.7rem 1.4rem;
+    }
+
+
+    .mid .btn a.border{
+        padding: 0.7rem 1.4rem;
+    
+    }
+
+    /* adjusting details section*/
+
+    .details{
+        padding: 5rem 2rem; /* top- bottom, left-right*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details .one{
+        width: 70%;
+    }
+    
+    
+    .details .one a{
+    font-size: 1rem;
+    }
+
+
+    .details .two{
+        padding-left: 0 rem;
+        border-left: 0;
+        border-top: 1px solid #666262;
+        width:70%;
+        margin-top: 1.7rem;
+        padding-top: 1.7rem;
+    }
+
+   
+
+/**----Trainer/Third Section--*/
+
+
+    .trainer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainer .about{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+
+    .trainer .people{
+        width: 70%;
+    }
+
+
+/**----Claases/Fourth Section--*/
+
+    .class{
+        padding: 6rem;
+    }
+
+    .class .classMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .class .classMenu .team1{
+        width:65%;
+        margin-bottom: 20px;
+    }
+  
+/**----Contact/Fifth Section--*/
+
+    .contact{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .form{
+        width: 70;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact .form h2{
+        font-size: 2.5rem;
+    }
+ 
+    .contact .map{
+        width: 60%;
+    }
+    
+/**----Footer/Sixth Section--*/
+
+    .footer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
 }
 
+@media screen and (max-width: 496px){
 
-@media screen and (max-width: 496x){
+
+    .back .overlay{
+        opacity: 85%;
     
+    }
+    
+    .mid p{
+        margin-bottom: 0.8rem;
+    }
+
+    .mid h2{
+        font-size: 1.8rem;
+    }
+
+    .mid .btn{
+    margin-top: 0.7rem;
+
+    }
+
+    /* adjusting details section*/
+
+    .details{
+        padding: 4rem 1rem; /* top- bottom, left-right*/
+    }
+
+    .details .one{
+        width: 100%;
+    }
+    
+
+    .details .two{
+        width:100%;
+    }
+
+   
+
+/**----Trainer/Third Section--*/
+
+    .trainer{
+        padding: 4rem 1rem;
+        align-items: center;
+    }
+    .trainer .about{
+        width: 100%;
+    }
+       .trainer .people{
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trainer .people .team1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+/**----Claases/Fourth Section--*/
+
+    .class{
+        padding: 4rem 1rem;
+    }
+
+
+    .class .classMenu .team1{
+        width:100%;
+    }
+  
+/**----Contact/Fifth Section--*/
+
+    .contact{
+        padding: 4rem 1rem;
+    }
+    .contact .form{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+ 
+    .contact .map{
+        width: 100%;
+    }
+    
+/**----Footer/Sixth Section--*/
+
+    .footer{
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
