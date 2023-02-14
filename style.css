@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+/* SCROLL BEHAVIOUR*/
+html{
+    scroll-behavior: smooth;
+}
 
 .nav{
     position:fixed; /* so that navbar is fixed even when we scroll*/
